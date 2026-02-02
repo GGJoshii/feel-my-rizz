@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+  
+:root{
+  --background-color: #ffd6d6;
+}
+
+body {
+  text-align: center;
+  margin-top: 70px;
+  font-family: "Indie Flower";
+  color: #e67373;
+  background-color: var(--background-color);
+  background-image:url('fallingredhearts-ezgif.com-gif-maker.gif');
+  background-repeat: repeat;
+  background-position: left;
+  min-height: 400px;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.left-image {
+  display: block;
+  width: 200px;
+  height: 30;
+  top: 50%;
+  margin-top: -200px;
+  left: 50%;
+  margin-left: 400px;
+  position: absolute;
+}
+
+.right-image {
+  display: block;
+  width: 200px;
+  height: 30;
+  top: 50%;
+  margin-top: 65px;
+  left: 50%;
+  margin-left: -585px;
+  position: absolute;
+}
+
+.glow {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: "Pacifico";
+  font-weight: bold; 
+  text-align: center;
+  margin-top: 70px;
+  animation: bounce-color 4s infinite alternate;
+}
+
+/* Define the animation sequence */
+@keyframes bounce-color {
+  0% {
+    transform: translateY(0) scale(0.5); /* Start position and scale */
+    color: #6c0000; /* Start color (a cute pink/orange) */
+    text-shadow: 0 0 5px rgb(255, 218, 191); /* Subtle shadow */
+  }
+  50% {
+    transform: translateY(0) scale(0.8); /* Bounce up and slightly bigger */
+    color: #ff0000; /* Middle color (a cute peach) */
+    text-shadow: 0 0 5px rgb(255, 198, 185); /* More pronounced shadow */
+  }
+  100% {
+    transform: translateY(0) scale(0.5); /* End position and scale (back down) */
+    color: #6c0000; /* End color */
+    text-shadow: 0 0 5px rgb(255, 215, 215);
+  }
+}
+
+.rizz {
+  margin-bottom: 10 px;
+}
+
+button {
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: "Indie Flower";
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #febebe;
+    color: #ff0000;
+    border-radius: 12px;
+    border: 2px outset #febebe;
+    box-shadow: 0px 4px 0px #ff7272;
+    transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff7272;
+  color: #ffffff;
+  border: 2px outset #ff7272;
+  box-shadow: 1px 1px 2px #ef4343;
+  transform: translateY(4px);
+  cursor: hand;
+}
+
+.mutebtn {
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: "Indie Flower";
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #dad9d9;
+    color: rgb(146, 107, 126);
+    border-radius: 12px;
+    border: 2px outset #e8e0e0;
+    box-shadow: 0px 4px 0px #a59b9b;
+    transition: 0.3s;
+}
+
+.mutebtn:hover {
+  background-color: #baaeae;
+  color: #f9f1f1;
+  border: 2px outset #baaeae;
+  box-shadow: 1px 1px 2px #a59b9b;
+  transform: translateY(4px);
+  cursor: hand;
+}
+
+/* Hide the main content initially */
+.hidden {
+    display: none;
+}
+
+/* Full-screen overlay styling */
+#music-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #231497;
+    z-index: 9999; /* Ensures it's on top of everything else */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-image {
+  display: block;
+  min-height: 200px;
+  margin-left: -800px;
+  position: absolute;
+  position: left;
+  z-index: -3;
+  animation: moveCenter-image 10s infinite linear; /* Apply the animation */
+}
+
+@keyframes moveCenter-image {
+  0% {
+    transform: translateX(-1000px); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(2000px); /* Start at the original horizontal position */
+  }
+}
+
+.center-image2 {
+  display: block;
+  width: 265px;
+  height: 30;
+  top: 50%;
+  margin-top: -200px;
+  left: 50%;
+  margin-left: -130px;
+  position: absolute;
+  z-index: -3;
+  animation: moveCenter-image2 5s infinite linear; /* Apply the animation */
+}
+
+@keyframes moveCenter-image2 {
+  0% {
+    transform: translateX(-900px); /* Start at the original horizontal position */
+  }
+  50% {
+    transform: translateX(-900px); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(0px); /* Start at the original horizontal position */
+  }
+}
+
+.center-image3 {
+  display: block;
+  width: 200px;
+  height: 30;
+  top: 50%;
+  margin-top: 60px;
+  left: 50%;
+  margin-left: -130px;
+  position: absolute;
+  z-index: -3;
+  animation: moveCenter-image3 5s infinite linear; /* Apply the animation */
+  animation-delay: 5s;
+}
+
+@keyframes moveCenter-image3 {
+  0% {
+    transform: translateX(0px); /* Start at the original horizontal position */
+  }
+  50% {
+    transform: translateX(900px); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(900px); /* Start at the original horizontal position */
+  }
+}
+
+b {
+  font-family: 'Indie Flower';
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold; 
+  text-align: center;
+  margin-top: 70px;
+  color: #7968fc;
+}
+
+.instructions {
+  color: #231497;
+  text-align: center;
+  display: block;
+  font-family: 'Indie Flower';
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: -350px;
+  margin-bottom: -300px;
+  z-index: 3;
+  animation: moveCircle 8s infinite linear; /* Apply the animation */
+}
+
+@keyframes moveInstructions {
+  0% {
+    transform: translateX(0); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(-400px); /* Move 200px to the left */
+  }
+}
+
+.cloud {
+  width: 450px;
+  height: 200px;
+  background: #ffffff; /* Base color */
+  position: absolute; /* Needed for absolute positioning of pseudo-elements */
+  animation: moveCircle 8s infinite linear; /* Apply the animation */
+  margin: 50px;
+  margin-right: -300px;
+  margin-top: 400px;
+  z-index: -1;
+   box-shadow:
+    0 0 10px #ffffff,  /* subtle white glow */
+    0 0 15px #333233; /* larger white glow */
+}
+
+@keyframes moveCloud {
+  0% {
+    transform: translateX(0); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(-400px); /* Move 200px to the left */
+  }
+}
+
+.cloud::before,
+.cloud::after {
+  content: ''; /* Required for pseudo-elements to render */
+  position: absolute; /* Position relative to the parent .cloud element */
+  background: inherit; /* Inherit the same background color */
+  /* Add box-shadow for a softer, more realistic look */
+    box-shadow:
+    0 0 10px #ffffff,  /* subtle white glow */
+    0 0 15px #333233; /* larger white glow */
+  z-index: 1;
+}
+
+.cloud::after {
+  width: 100px;
+  height: 100px;
+  top: -90px; /* Adjust vertical position */
+  left: 220px; /* Adjust horizontal position */
+    box-shadow:
+    0 0 10px #ffffff,  /* subtle white glow */
+    0 0 15px #333233; /* larger white glow */
+  z-index: 2;
+}
+
+.cloud::before {
+  width: 200px;
+  height: 200px;
+  top: -170px; /* Adjust vertical position */
+  left: 25px; /* Adjust horizontal position */
+    box-shadow:
+    0 0 10px #ffffff,  /* subtle white glow */
+    0 0 15px #333233; /* larger white glow */
+  z-index: 1;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%; /* Makes the square div a circle */
+  position: absolute; /* Essential for transform/translation to work relative to its original position */
+  animation: moveCircle 25s infinite linear; /* Apply the animation */
+  margin: 50px;
+  margin-right: 600px;
+  margin-top: -500px;
+  z-index: -1;
+  box-shadow:
+    0 0 50px #ffffff,  /* subtle white glow */
+    0 0 100px #4c5d9d, /* larger white glow */
+    0 0 150px #000f47, /* larger white glow */
+    0 0 300px #ffffff;  /* subtle white glow */
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translateX(0); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(-400px); /* Move 200px to the left */
+  }
+}
+
+.cloud2 {
+  width: 150px;
+  height: 50px;
+  background: #ffffff; /* Base color */
+  position: absolute; /* Needed for absolute positioning of pseudo-elements */
+  animation: moveCloud2 5s infinite linear; /* Apply the animation */
+  margin: 300px;
+  margin-right: 300px;
+  margin-top: -100px;
+  z-index: 3;
+   box-shadow:
+    0 0 20px #ffffff,  /* subtle white glow */
+    0 0 25px #333233; /* larger white glow */
+}
+
+@keyframes moveCloud2 {
+  0% {
+    transform: translateX(300px); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(-1000px); /* Move 200px to the left */
+  }
+}
+
+.cloud2::before,
+.cloud2::after {
+  content: ''; /* Required for pseudo-elements to render */
+  position: absolute; /* Position relative to the parent .cloud element */
+  background: inherit; /* Inherit the same background color */
+  /* Add box-shadow for a softer, more realistic look */
+    box-shadow:
+    0 0 20px #ffffff,  /* subtle white glow */
+    0 0 25px #333233; /* larger white glow */
+  z-index: 3;
+}
+
+.cloud2::after {
+  width: 50px;
+  height: 50px;
+  top: -45px; /* Adjust vertical position */
+  left: 85px; /* Adjust horizontal position */
+    box-shadow:
+    0 0 20px #ffffff,  /* subtle white glow */
+    0 0 25px #333233; /* larger white glow */
+  z-index: 4;
+}
+
+.cloud2::before {
+  width: 25px;
+  height: 25px;
+  top: -15px; /* Adjust vertical position */
+  left: 63px; /* Adjust horizontal position */
+    box-shadow:
+    0 0 20px #ffffff,  /* subtle white glow */
+    0 0 25px #333233; /* larger white glow */
+  z-index: 5;
+}
+
+button#play-music-button {
+    font-size: 16px;
+    margin: 115px;
+    cursor: pointer;
+    font-family: "Indie Flower";
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #ddd9ff;
+    color: #231497;
+    border-radius: 12px;
+    border: 2px outset #ddd9ff;
+    box-shadow: 0px 4px 0px #7968fc;
+    transition: 0.3s;
+}
+
+button#play-music-button:hover {
+  background-color: #7968fc;
+  color: #ffffff;
+  border: 2px outset #7968fc;
+  box-shadow: 1px 1px 2px #000f47;
+  transform: translateY(4px);
+  cursor: hand;
+}
+
+.cloud3 {
+  width: 250px;
+  height: 75px;
+  background: #ffffff; /* Base color */
+  position: absolute; /* Needed for absolute positioning of pseudo-elements */
+  animation: moveCircle 15s infinite linear; /* Apply the animation */
+  margin: 450px;
+  margin-right: 550px;
+  margin-top: -300px;
+  z-index: 3;
+   box-shadow:
+    0 0 15px #ffffff,  /* subtle white glow */
+    0 0 20px #333233; /* larger white glow */
+}
+
+@keyframes moveCloud3 {
+  0% {
+    transform: translateX(1000); /* Start at the original horizontal position */
+  }
+  100% {
+    transform: translateX(-800px); /* Move 200px to the left */
+  }
+}
+
+.cloud3::before,
+.cloud3::after {
+  content: ''; /* Required for pseudo-elements to render */
+  position: absolute; /* Position relative to the parent .cloud element */
+  background: inherit; /* Inherit the same background color */
+  /* Add box-shadow for a softer, more realistic look */
+    box-shadow:
+    0 0 15px #ffffff,  /* subtle white glow */
+    0 0 20px #333233; /* larger white glow */
+  z-index: 3;
+}
+
+.cloud3::after {
+  width: 80px;
+  height: 80px;
+  top: -55px; /* Adjust vertical position */
+  left: 95px; /* Adjust horizontal position */
+    box-shadow:
+    0 0 15px #ffffff,  /* subtle white glow */
+    0 0 20px #333233; /* larger white glow */
+  z-index: 4;
+}
+
+.cloud3::before {
+  width: 60px;
+  height: 60px;
+  top: -20px; /* Adjust vertical position */
+  left: 55px; /* Adjust horizontal position */
+    box-shadow:
+    0 0 15px #ffffff,  /* subtle white glow */
+    0 0 20px #333233; /* larger white glow */
+  z-index: 5;
+}
